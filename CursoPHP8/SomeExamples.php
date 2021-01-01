@@ -37,3 +37,20 @@ $OneVariable = 0; # studly case (not recommended)
 
 # The programer should keep the same code style all along the code.
 
+# PHP 8 #011 Data types
+# Data Types
+# In PHP, variables can have different types of values.
+$variable = 100;
+$variable = "hundred";
+
+# In PHP, the variables are Implicitly Typed Variables.
+$integer = 100; // integer
+$float = 10.5; // float with fractional part
+$bool = true; // boolean (true or false)
+$string = "Hello World!"; // string with char
+$array = [1,2,3]; // array - collection of values
+$person = new Person(); //Object with properties and methods
+$empty = null; // empty variable
+
+
+
