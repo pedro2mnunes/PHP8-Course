@@ -58,4 +58,4 @@ $x = 4 - 2; # subtraction
 $x = 4 * 2; # product
 $x = 4 * 2; # division
 $x = 4 % 2; # modulus (remainder of division)
-
+$x = 4 ** 2; # exponent
