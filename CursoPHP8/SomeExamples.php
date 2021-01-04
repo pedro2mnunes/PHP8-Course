@@ -52,5 +52,10 @@ $array = [1,2,3]; // array - collection of values
 $person = new Person(); //Object with properties and methods
 $empty = null; // empty variable
 
-
+# PHP 8 #12 Assign operator and mathematical operators
+$x = 4 + 2; # sum
+$x = 4 - 2; # subtraction
+$x = 4 * 2; # product
+$x = 4 * 2; # division
+$x = 4 % 2; # modulus (remainder of division)
 
