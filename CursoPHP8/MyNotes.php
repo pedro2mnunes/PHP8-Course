@@ -52,7 +52,7 @@ $array = [1,2,3]; // array - collection of values
 $person = new Person(); //Object with properties and methods
 $empty = null; // empty variable
 
-# PHP 8 #12 Assignment operator and mathematical operators
+#12 Assignment operator and mathematical operators
 $x = 4 + 2;  # sum
 $x = 4 - 2;  # subtraction
 $x = 4 * 2;  # product
@@ -60,7 +60,7 @@ $x = 4 * 2;  # division
 $x = a % b;  # modulus (remainder of $a divided by $b)
 $x = a ** b; # exponentiation. Result of raising $a to the power of $b.
 
-# PHP 9  Combined Operators and Incrementing/Decrementing Operators
+#13  Combined Operators and Incrementing/Decrementing Operators
 $a = 10;
 $a += 20 # 30
 $a -= 3  # 7
@@ -70,3 +70,53 @@ $a /= 2  # 5
 # $a++ Post-increment. Returns $a, then increments $a by one.
 # --$a Pre-decrement. Decrements $a by one, then returns $a.
 # $a-- Post-decrement. Returns $a, then decrementes a$ by one.
+
+#015 Comparison operators and Spaceship operators
+$a = (2 == 3);     # false
+$a = (100 == 100); # true
+$a = (50 == '50'); # true
+$a = (50 === '50'); # false
+
+$a = (2 != 3);    #true
+$a = (50 != 50);  #false
+$a = (50 != '50') #false
+$a = (50 !=='50') #true
+
+$a <=> $b 
+
+# Comparison operators with 3 symbols , they compare value and type
+# ===
+# !== 
+
+$x = 1 <=> 1; # 0 (1==1)
+$x = 3 <=> 2; # 1 (3 > 2)
+$x = 1 <=> 2; # -1 (1 < 2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
