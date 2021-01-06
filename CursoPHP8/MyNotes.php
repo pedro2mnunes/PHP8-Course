@@ -92,8 +92,13 @@ $x = 1 <=> 1; # 0 (1==1)
 $x = 3 <=> 2; # 1 (3 > 2)
 $x = 1 <=> 2; # -1 (1 < 2)
 
-
-
+# 016 Logical Operators
+$a and $b	# And	true if both $a and $b are true.
+$a or $b	# Or	true if either $a or $b is true.
+$a xor $b	# Xor	true if either $a or $b is true, but not both.
+! $a	    # Not	true if $a is not true.
+$a && $b	# And	true if both $a and $b are true.
+$a || $b	# Or	true if either $a or $b is true.
 
 
 
