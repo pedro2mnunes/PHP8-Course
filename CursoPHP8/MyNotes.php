@@ -100,7 +100,37 @@ $a xor $b	# Xor	true if either $a or $b is true, but not both.
 $a && $b	# And	true if both $a and $b are true.
 $a || $b	# Or	true if either $a or $b is true.
 
+# 017 Strings, Concatenation operator, Heredoc and Nowdoc and die() function
+# Both are correct:
+$a = "This is a string";
+$b = "This is another string";
+# Concatenation operator
+$word1 = 'Hello';
+$word2 = 'World';
+$phrase = $word1 . ' ' . $word2; #Hello World
+$phrase = "$word1 $word2"; #Hello World
+# Strings with '' the variables are NOT interpreted. Single quoted strings are literal.
+# Strings with "" the variables are interpreted (parse). Useful to allow escaping characters.
 
+# Heredoc and Nowdoc are alternative way to define a string. They can be alphanumeric.
+# Heredoc is obtained by defining an identifier that will mark the start and the end of a string.
+echo <<<EOT
+Hello World.
+Goodbye!
+EOT;
+# Output:
+# Hello World.
+# Goodbye!
+
+#Nowdoc - the variables are not evaluated
+$foo = 'bar'
+echo <<<'EOT'
+Hello $foo.
+Goodbye!
+EOT;
+# Output:
+# Hello $foo.
+# Goodbye!
 
 
 
