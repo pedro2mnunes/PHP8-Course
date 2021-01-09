@@ -123,18 +123,23 @@ EOT;
 # Goodbye!
 
 #Nowdoc - the variables are not evaluated
-$foo = 'bar'
-echo <<<'EOT'
-Hello $foo.
-Goodbye!
-EOT;
+$foo = 'bar';
+echo <<<'EOT';
+# Hello $foo.
+# Goodbye!
+# EOT;
 # Output:
 # Hello $foo.
 # Goodbye!
 
+# 018 Escape characters
+# Escape sequences with \
+# utf-8 example
+echo "\u{A9}"; # copyright
+# html example
+echo '&copy';  
 
-
-
+# 019 
 
 
 
